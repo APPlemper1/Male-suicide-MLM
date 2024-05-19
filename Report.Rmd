@@ -1,0 +1,269 @@
+---
+title: "Identifying predictors of male suicide between regions of England and Wales."
+author: 'By Andrew P Plemper'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction 
+
+Worldwide, males are around 1.8 times as likely to die by suicide than females, and 4 times as likely within Europe, (Värnik, 2012). A recent publication by the Office of National Statistics revealed similar gender differences in suicide rates in England and Wales, (ONS, 2021a). However, data from this report also suggests that there may be substantial variation in male suicide rates across England and Wales.This is represented below in Figure 1: 
+
+
+#### *Figure 1: mean suicide rates per 100,000 between 1993-2022 by region and sex.* 
+
+```{r  echo= FALSE,message=FALSE}
+require(ggplot2)
+m_suic<- read.csv("data\\Mean_suic1.csv")
+
+
+ggplot(m_suic, aes(x= Area, y= suic, fill = Sex))+ 
+   geom_bar(stat = "identity", position = "dodge", color = "black")+
+   labs(
+     x = "Region",
+     y = "Suicide Rate",
+     fill = "Sex") +
+   theme_minimal() +
+   theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+```
+
+Here, it can be seen that there is a large sex difference in suicide rates, with male suicides occurring at approximately triple the rate for females across all regions. However, closer inspection of this plot also reveals that males are more susceptible to variation in mean suicide rates across regions. Regions such as the Northeast and Wales seem to show the largest sex differences in suicide rates compared to others. However, when examining regional differences in male suicide over time and between regions, some interesting trends emerge. 
+
+#### *Figure 2: Interactive plot of suicide rates across time by region of England and Wales and sex from 2001- 2021..*
+
+```{r pressure, echo= FALSE, message=FALSE, out.width="120%"}
+
+knitr::include_app("https://zrte10-andrew-plemper.shinyapps.io/Suicide_Vis/", height = 700 )
+
+
+```
+
+The visualisation above shows that female rates of suicide are comparatively static across regions and time. However, for males, there is a large amount of variability in suicide across regions and over time. For instance, the Northeast of England has seen a steady increase in male suicide rates, with the Northeast showing the highest rates of suicide in England and Wales in 2021. Whereas for London, there has been a sharp decrease in male suicide rates across time. This suggests that there could be external factors which influence suicide specifically among men to varying degrees across regions. 
+
+For instance, unemployment is one of the largest predictors of suicide in males (Aubin, Berlin, & Kornreich, 2013), and has been found to increase suicide attempts in men fourfold (Walther, et al., 2023). Furthermore, several studies have noted that unemployment and economic deprivation seem to be more strongly associated with suicide in males compared to females (Andrés, Collings, & Qin, 2010; Córdoba-Doña, et al., 2014; Crombie, 1990; Rezaeian, et al., 2005). This suggests that economic factors could contribute to the observed sex difference in suicide rates over time. Regarding regional variation in unemployment, the Northeast and London have the highest unemployment rates in England and Wales, (Office for National Statistics. (2024). However, unlike London, the Northeast has the lowest rates of high-income areas (Office for National Statistics, 2024), and the highest number of left-behind communities (LBC) in England, (Oxford Consultants for Social Inclusion, 2020). LBCs are defined by severe economic deprivation and a lack of civic assets and infrastructure. There are approximately 9 benefit claimants for every job vacancy in LBCs, highlighting a lack of job opportunities for the unemployed. Additionally, over one-third of individuals in these areas have no qualifications, (Oxford Consultants for Social Inclusion, 2020). Due to these factors, job seekers in LBCs could face greater challenges in finding employment. Subsequently, unemployment could have a disproportionately greater impact on individuals in high LBC regions. As unemployment seems to be more strongly associated with suicide in men (Milner, Page, & LaMontagne, 2014), this factor could explain the observed regional variation in male suicide. Interestingly, regions with high levels of LBCs also tend to show higher rates of male suicide. After the Northeast, the Northwest and Yorkshire have the highest rates of LBCs in England. Data on LBCs is not yet available for Wales, however, levels of household deprivation in Wales are comparable to those of the Northeast, (Office for National Statistics 2022). This pattern is also consistent with the rates of male suicide found in these regions, (see figure 1). This seems to suggest that the relationship between unemployment and male suicide could be contingent on regional differences in economic deprivation/ LBC prevalence. Here, it could be expected that there would be larger positive associations between unemployment and male suicide in regions with high levels of deprivation, i.e. the northeast and Wales, compared to regions with low levels of deprivation, i.e. London.
+
+Another factor which could underlie regional variation in male suicide is substance abuse. Substance abuse is robustly identified as a risk factor for suicide, (Hall, Platt, & Hall, 1999; Turecki, et al., 2019). Nevertheless, current evidence suggests that the substance abuse is more strongly associated with suicide in women than men, (Yoshimasu, et al., 2008). However, a recent systematic review found that substance abuse was still one of the most prominent risk factors for suicide in men (Richardson,  Robb, & O'Connor, 2021). This suggests that while substance abuse may not necessarily be a male-specific predictor of suicide, it is a relevant factor in suicide among males.
+Rates of substance abuse also appear to vary considerably between regions. Data from the Office of national statistics (2024) shows the Northeast, Northwest and Wales have some of the highest occurrences of drug and alcohol-related deaths, with the highest rates found in the Northeast (See Figure 3). Estimated rates of alcohol and class A drug dependency also seem to vary widely between regions, with relatively higher rates being found in the Northeast of England, (Public Health England 2021a; Public Health England 2021b).
+
+#### *Figure 3: Mean rates of substance abuse related deaths by region of England and Wales and sex from 1993- 2021..*
+```{r  echo= FALSE,message=FALSE}
+require(ggplot2)
+mean_SA<- read.csv("data/mean_SA.csv")
+
+
+ ggplot(mean_SA, aes(x= Area, y= SA_dth, fill = Sex))+ 
+   geom_bar(stat = "identity", position = "dodge", color = "black")+
+   labs(
+     x = "Region",
+     y = "Substance abuse related Deaths 
+     per 100K",
+     fill = "Sex") +
+   theme_minimal() +
+   theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+```
+
+Interestingly, the regions with the highest rates of alcohol and drug deaths also seem to show higher rates of suicide. Furthermore, much like suicide, drug and alcohol-related deaths appear to pertain more strongly to men than women. Subsequently, it could be that this factor underlies some of the variance in suicide across regions and sexes. 
+
+However, it is unclear whether the association between substance abuse and suicide is the same across regions and sexes, or whether unobserved factors cause variation in the strength of this association. If the latter were true, substance abuse may disproportionately impact suicide within certain regions.  According to Griffiths, et al., (2008), drug-related deaths are almost 5 times higher in regions with the highest, compared to the lowest, levels of deprivation. It may be that variation in levels of deprivation promotes more serious drug dependency, e.g. use of harder drugs, leading to larger associations between substance abuse and suicide in deprived regions. Alternatively, it may be that the association between suicide and substance abuse is the same for all regions, i.e. a single coefficient explaining the association across the entire population. However, this point remains to be investigated empirically.
+
+The literature reviewed so far seems to point to the fact that unemployment may be more strongly associated with suicide among men, and this effect may be extenuated in economically deprived areas. It is therefore predicted that males in Wales and the Northeast will show the greatest association between unemployment and suicide. As for the association of substance misuse with suicide, it is presently unknown whether there will be substantial variation in this association between regions. Furthermore, it is unclear as to whether this factor is more strongly associated with male or female suicide. Therefore, this part of the investigation is exploratory, and no specific predictions are made.
+
+# Method 
+
+>Mesures
+
+**Predictor variables**
+
+**_Drug-related deaths_**
+
+The first predictor variable was the age-standardised mortality rate per 100,000 for accidental deaths related to mental and behaviour disorders and accidental poisoning from drug misuse by region of England and Wales and sex. This variable was used as a proxy measure for the prevalence of drug abuse within a region, (Office for National Statistics, 2023).
+
+**_Alcohol-related deaths_**
+
+The second predictor variable was the age-standardised death rates including chronic conditions due to alcohol use, mental and behavioural disorders and accidental and intentional self-posing by region of England and Wales and sex. This variable was used as a proxy measure for the prevalence of alcohol use within a region, (Office for National Statistics, 2022).
+
+**_Benefit claimants_**
+
+The third variable was the number of benefit claimants resident in each region as a percentage of workforce jobs plus the claimant count for both males and females, (Nomis, 2024).
+
+**_Year_**
+
+This variable was years from 2001-2021 with 2001 coded as  0 and 2021 as 21. 
+
+**_Outcome variable_**
+
+**_Suicide rate_**
+
+The outcome variable was the age-standardised Suicide rates per 100,00 by sex and region of England and Wales. The data was sourced from the Office of National Statistics and can be accessed here, (Office for National Statistics, 2023b).
+
+>Procedure 
+
+The alcohol-related deaths and suicide rate data were downloaded from the Office of National Statistics (ONS) website. While the alcohol-related death rate was calculated including cases of intentional self-poisoning, the ONS advised that the number of cases from self-poisoning was so low as not to alter the raw figures. However, the existing rate calculations for drug-related deaths were calculated including a substantial number of cases from self-poisoning.  Therefore, a bespoke drug-related death rate, excluding deaths from intentional self-poisoning, was provided by the ONS for use in this analysis. The data on benefit claimants was downloaded from the Nomis census and labour market statistics website. This measure was chosen over unemployment as it does not include carers or retirees. Data were then cleaned and analysed using the lme4 package in R studio. A link to a git hub repository containing the R script and data sources can also be found in the supplementary material. 
+
+
+
+>Analytic strategies
+
+First, the validity of the drug and alcohol deaths per 100,00 as a proxy for the prevalence of addiction was assessed using multiple correlations. Correlations were preferred on data for England only due to limited data on substance abuse in Wales. Details of the measures chosen can be found below in Table 2. Links to access the data for the validation measures can also be found in the supplementary material. The results of the multiple correlations are shown below in Table 2. 
+
+*Table 1: Validation measures description.*
+
+|Variable name | Description |
+|--|-------------|
+| EP|	The proportion of the population who exceeded 12 (men)/9 (women) units on the heaviest drinking day in the last week in the week before the interview in England, (only those 18+ selected), (REF).|
+| DULY|	The proportion of 16- to 59-year-olds reporting use of drugs in the last year for England.
+| OCU |	Estimates of the number of individuals using crack and opiates in England from 2010-2016 (missing data for 2015) (REF).|
+| OU|	Estimates of the number of individuals using opiates in England from 2010-2016 (missing data for 2015) (REF).|
+| CU|	Estimates of the number of individuals using crack in England from 2010-2016 (missing data for 2015) (REF).|
+| AUP |	Number of adults presenting for alcohol misuse treatment from 2005-2021 in England. (REF).|
+|DRDR |	Drug-related death rate  (REF).|
+|ARDR |	Alcohol-related death rate (REF).|
+
+*Table 2: multiple correlations between validation measures and proxy measures using data for England only.* 
+
+|    |	EP| DULY|	OCU |	OU|	CU |AUP	|DRDR	|ARDR|
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|DRDR|-0.26 (n= 13)  |-0.54 (n = 23)|0.93 (n = 6)| 0.64 (n = 6)| 0.75 (n = 6)|0.26 (n = 17)|  |0.72 (n = 21)|
+|ARDR| 0.05 (n = 13) |-0.48 (n= 20)|0.28 (n = 6)|0.45 (n = 6)|-0.30 (n = 6)|0.15 (n = 17)| 0.72 (n = 21) | | 
+
+The assumption of normality was then examined using histograms, it was apparent that the dependent variable showed a bi-binomial distribution due to the large sex difference in suicide rates. An attempt was made to perform an analysis using data for both males and females, however, due to model convergence issues and violation of the assumptions of MLM this was not a viable option. Therefore the data set was split to include only data for males and subsequent analysis was carried out on this data set only. 
+
+The assumption of linearity was then assessed by plotting the independent variables against the dependent variable on scatter plots. Almost all of the predictor variables seemed to show a linear relationship with suicide across sexes and regions. However, the year variable showed a non-linear relationship with suicide across time as a main effect. This relationship was not as prominent when examining plotting time against suicide rates for individual regions. To amend this a sine wave was fitted to the main effects of year using an optimiser in R studio. 
+
+To assess for multicollinearity, multiple correlations were performed on all predictors. The results are displayed below in Table 3. 
+
+*Table 3: multiple correlations between predictors* 
+
+||  Benefit claimants|Drug-related deaths|Alcohol-related deaths|Year|
+|----|----|----|----|----|
+|Benefit claimants|1.00||||
+|Drug-related death|0.28|1.00|||
+|Alcohol-related deaths|0.61|0.69|1.00||
+|Year|0.03|0.54|0.32|1.00|                   
+
+As the predictors indicated a high degree of multicollinearity, the drug and alcohol deaths were combined by adding the rate for alcohol-related deaths to the rate for drug-related deaths. The results are displayed below in Table 4. 
+
+
+*Table 4: multiple correlations between predictors* 
+
+|    |  Benefit claimants|Drug & Alcohol related deaths|  Year|
+|----|----|----|----|
+|Benefit claimants|1.00|||
+|Drug & Alcohol related deaths|0.34|1.00||
+|Year|0.03|0.53|1.00|   
+
+
+# Results
+
+Data were analysed using the lme4 package for multilevel modelling in R studio. A null model was created which contained only the intercept value for male suicide rates across England and Wales. Next, a null model with random intercepts for each area of England and Wales was created. An ANOVA revealed that, compared to the null model, (AIC = 957.58, BIC = 964.28, LogLik = --476.79 ), the random intercepts model was a significantly better fit for the data, (AIC = 833.77, BIC = 843.81, LogLik = -413.89, p<.001). Next, a model containing the main effects of year, alcohol and drug deaths and benefit claimants, with random intercepts for the area was built. An ANOVA revealed that compared to the random intercepts-only model, the model with main effects was a significantly better fit for the data, (AIC = 815.18, BIC= 835.27, LogLik = -401.59, p<.001). To address the issue of the nonlinear relationship between the year IV and suicide rates an optimised sine wave was fitted to the year variable. An ANOVA revealed that this model was a better fit for the data (AIC = 805.93, BIC= 826.01, LogLik = -396.97) compared to the previous model. This model was then built upon by creating a maximal model including random intercepts and slopes for the alcohol and drug death, year and benefit claimant variables for each region of England and Wales, however, this model failed to converge. Subsequently, the predictor which explained the least amount of variance, drug and alcohol deaths, was dropped from the model, however, the model again failed to converge. To reduce the number of parameters estimated by the model, random slopes for year and benefit claimants were fitted to the same random intercept. This time the model converged on a solution. An ANOVA revealed that this model was a significantly better fit for the data compared to the model containing main effects only, (AIC = 802.37, BIC= 839.19, LogLik = -390.19, p = .019). However, an inspection of scatterplots of residual vs observed values revealed evidence of heteroscedasticity of the alcohol and drug death variable. To amend this a box-cox transformation was performed on this variable and the model was re-run. A further ANOVA revealed that this model was a significantly better fit for the data compared to the main effects-only model, (AIC = 803.73, BIC= 839.19, LogLik = -390.86, p = 0.032). 
+
+Inspection of the histograms revealed that the model residuals were normally distributed. Inspection of fitted VS residual plots indicated that heteroscedasticity of the level one predictor had been attenuated. The remaining assumption checks can be found in the supplementary material. The results of the analysis are displayed below in tables 5 and 6. 
+
+*Table 5: Main  Effects Summary*
+
+|Effect|	*β*	| *SE* |	*DF* |	*t*	| *p*|
+|----|----|----|----|----|----|
+|(Intercept)|	-2.951|	3.797|	192.066|	-0.777|	0.438|
+|Year (sine)|	1.139|	0.229|	190.520|	4.979|	0.000|
+|Alcohol-related deaths (Box-Cox)|	0.175|	0.190|	122.945|	0.924|	0.357|
+|Benefit claimants| 0.214|	0.093|	10.398|	2.292|	0.044|
+
+*Table 6: Random  Effects Summary*
+
+|Region                  |(Intercept)|*β* - Year  |*β* - Benefit claimants|
+|------------------------|-----------|------------|-----------------------|
+|East                    |-0.477     |-0.034      |-0.163                 |
+|East Midlands           |-0.174     |-0.050      |-0.095                 |
+|London                  |0.125      |-0.181      |-0.284                 |
+|North East              |0.166      |0.047       |0.119                  |
+|North West              |0.467      |-0.026      |0.066                  |
+|South East              |-0.244     |-0.041      |-0.088                 |
+|South West              |0.090      |0.029       |0.087                  |
+|Wales                   |1.167      |0.009       |0.198                  |
+|West Midlands           |-0.280     |-0.028      |-0.100                 |
+|Yorkshire and The Humber|-0.425     |0.047       |-0.034                 |
+
+# Discussion 
+
+This study aimed to examine the effects of Drug and alcohol misuse and unemployment as predictors of regional and sex variation in suicide rates in England and Wales. Nevertheless, it was not possible to build a single model which investigated the effects of these predictors across both sexes and regions.  Therefore the analysis was carried out on a split data set containing only data for males. The results show that the overall effect of the substance abuse proxy was non-significant. This is again surprising, as substance misuse and addiction are robustly associated with suicide, (Hall, Platt, & Hall, 1999; Turecki, et al., 2019). Furthermore, in building the model it was identified that there was little variation in the association between substance abuse and across regions. This seems to rule out substance abuse as a factor in explaining regional variation in suicide rates among men.  
+
+Concerning the main effect of benefit claimants on suicide rates, the results show a significant and positive relationship. This is in line with previous research which has highlighted the association between unemployment and suicide, particularly among males, (Andrés, Collings, & Qin, 2010; Aubin, Berlin, & Kornreich, 2013; Córdoba-Doña, et al., 2014; Crombie, 1990; Rezaeian, et al., 2005; Walther, et al., 2023). However, the results of the random effects of benefit claimants on suicide rates are perhaps the most interesting. It was predicted that regions which experience the greatest levels of deprivation, i.e. the Northeast, and Wales, would show the greatest associations between benefit claimants and male suicide. Indeed, the associations for these regions are approximately 1-2 times higher than the global coefficient. This means that for men in Wales, for every 1% increase in benefit claimants in the total workforce there is an increase of 0.413 deaths from suicide per 100,000. For the men in the Northeast, this equates to an increase of 0.333 deaths from suicide for every 1% increase in male benefit claimants in the workforce. Interestingly, for males in London, every 1% increase in benefit claimants led to a 0.07 decrease in deaths from suicide per 100,000. These results seem to support the hypothesis that regions which experience the greatest economic deprivation would show greater associations between unemployment and suicide. This is consistent with previous research which has also highlighted this pattern, (Saurina, Bragulat, Saez, & López-Casasnovas, 2013).
+
+Overall, the results seem to suggest that unemployment is one potential factor that could explain regional variation in male suicide.  Future strategies to reduce suicide rates in England and Wales could focus on providing greater economic stability to more deprived regions, such as the Northeast and Wales. As individuals living in LBCs tend to be underskilled, this could be achieved through initiatives to upskill job seekers. Alternatively,  promoting new industries to flourish in less economically developed regions could provide greater work opportunities and help to upskill the general population. This may in turn reduce the association between unemployment and suicide in these regions, due to a lessening of the effects of unemployment on individual welfare and wellbeing. 
+
+Nevertheless, the findings of this study are not without their limitations. To begin, one of the fundamental assumptions of multilevel modelling is that all relevant predictors be included in the model, (Shaw & Flake, n.d.). This is problematic as the final model contained only two predictors. As such,  it is entirely possible that there were unobserved factors which could also be responsible for regional variation in suicide rates. Not accounting for these factors could have resulted in the overestimation of the coefficients in the final models. Nevertheless, due to the limited availability of data and issues around sample size, it was not possible to include further predictors. Additionally, as there was no available data on rates of substance abuse, the analysis relied on examining data from drug and alcohol related deaths as a proxy. Multiple correlations between this measure and other measures of substance abuse yielded mixed results. Additionally, these analyses are limited by a very small sample size. This raises concerns over the validity of the drug and alcohol deaths measure as a proxy for rates of substance abuse in the population. This could potentially explain why this variable failed to reach statistical significance in the analysis. Had a suitable direct measure of substance abuse been used in the analysis it may be that a more robust effect could have emerged. 
+
+Future research may wish to build upon the present study by examining this association across sexes as well as regions. This could give a better indication as to whether unemployment is a male-specific predictor of suicide. Additionally, future research could build upon the present design by including additional relevant predictors of suicide in any model. This would allow for a more comprehensive estimation of all factors which influence regional variation in male suicide and avoid overinflation of the model coefficients. Future research could also investigate the effects of the substance on suicide across regions by using a more reliable measure of substance abuse. Estimates of rates of addiction have been calculated by previous researchers, (Public Health England 2021a; Public Health England 2021b). However, due to a very small number of cases, these are not able to be used in any analysis spanning multiple years. Future, research could recalculate estimates of the prevalence of addiction over a greater period to be used as a predictor in subsequent analyses.  This may lead to more conclusive associations between substance abuse and suicide. 
+
+Overall the results seem to support the conclusion that the effects of unemployment could be responsible for regional variation in male suicide across England and Wales. Futhermore, these results suggest that this association is strongest in the Northeast of England and Wales. These findings could shape social and political policy to reduce the burden of unemployment in deprived regions. However, the results of this analysis should be interpreted in light of some methodological limitations. 
+
+# Refernces 
+
+Andrés, A. R., Collings, S., & Qin, P. (2010). Sex-specific impact of socio-economic factors on       suicide risk: a population-based case–control study in Denmark. European journal of public health,   20(3), 265-270.
+
+Aubin, H. J., Berlin, I., & Kornreich, C. (2013). The evolutionary puzzle of suicide. International   journal of environmental research and public health, 10(12), 6873-6886.
+
+Córdoba-Doña, J. A., San Sebastián, M., Escolar-Pujolar, A., Martínez-Faure, J. E., & Gustafsson,     P.E. (2014). Economic crisis and suicidal behaviour: the role of unemployment, sex and age in       Andalusia, southern Spain. International Journal for Equity in Health, 13, 1-10.
+
+Crombie, I. K. (1990). Can changes in the unemployment rates explain the recent changes in suicide    rates in developed countries?. International journal of epidemiology, 19(2), 412-416.
+
+Griffiths, C., Romeri, E., Brock, A., & Morgan, O. (2008). Geographical variations in deaths related  to drug misuse in England and Wales, 1993–2006. Health Statistics Quarterly, 39, 14-21.
+
+Hall, R. C., Platt, D. E., & Hall, R. C. (1999). Suicide risk assessment: a review of risk factors    for suicide in 100 patients who made severe suicide attempts: evaluation of suicide risk in a time   of managed care. Psychosomatics, 40(1), 18-27.
+
+Milner, A., Page, A., & LaMontagne, A. D. (2014). Cause and effect in studies on unemployment,        mental health and suicide: a meta-analytic and conceptual review. Psychological medicine, 44(5),    909-917.
+
+Nomis (2024). Official Labour Market Statistics 
+  Www.nomisweb.co.uk. https://www.nomisweb.co.uk/customerrors/nodataset.asp
+
+Office for National Statistics, (2023b). Suicide occurrences, England and Wales. 	        
+    https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths	  
+    /datasets/suicideinenglandandwales
+
+Office for National Statistics. (2022). Alcohol-specific deaths in the UK. 
+  https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/causesofdeat
+  h/datasets/alcoholspecificdeathsintheukmaindataset
+
+Office for National Statistics. (2023a). Deaths related to drug misuse, with an underlying cause of   accidental poisoning or mental and behavioural disorders, by sex, country and region, 	England     and Wales, 1993 to 2021.
+  https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/adhocs/1388dea   thsrelatedtodrugmisusewithanunderlyingcauseofaccidentalpoisoningorme	-   
+  ntalandbehaviouraldisordersbysexcountryandregionenglandandwales1993to2021
+
+Office for National Statistics. (2024). Office for National Statistics. Ons.gov.uk. 
+  https://www.ons.gov.uk/
+
+Oxford Consultants for Social Inclusion. (2020). Left behind neighbourhoods. 
+  https://ocsi.uk/left-behind-neighbourhoods/
+
+Public Health England. (2021a). Alcohol dependence prevalence in England. GOV.UK. 	
+  https://www.gov.uk/government/publications/alcohol-dependence-prevalence-in-england 
+
+Public Health England (2021b). Opiate and crack cocaine use: prevalence estimates by local area   
+  GOV.UK. https://www.gov.uk/government/publications/opiate-and-crack-cocaine-use-prevalence-estimat
+  es-for-local-populations
+
+Rezaeian, M., Dunn, G., St Leger, S., & Appleby, L. (2005). The ecological association between 
+  suicide rates and indices of deprivation in English local authorities. Social psychiatry and 
+  psychiatric epidemiology, 40, 785-791.
+
+Richardson, C., Robb, K. A., & O'Connor, R. C. (2021). A systematic review of suicidal behaviour in   men: A narrative synthesis of risk factors. Social Science & Medicine, 276, 113831.
+  Saurina, C., Bragulat, B., Saez, M., & López-Casasnovas, G. (2013). A conditional model for   
+  estimating the increase in suicides associated with the 2008–2010 economic recession in England. J   Epidemiol Community Health, 67(9), 779-787.
+
+Shaw, M. S & Flake, J. K. (n.d.). Introduction to Multilevel Modelling. In www.learn-mlms.com.   
+  Retrieved May 18, 2024, from https://www.learn-mlms.com/index.html
+
+Turecki, G., Brent, D. A., Gunnell, D., O’Connor, R. C., Oquendo, M. A., Pirkis, J., & Stanley, B.    H. (2019). Suicide and suicide risk. Nature reviews Disease primers, 5(1), 74.
+
+Värnik, P. (2012). Suicide in the world. International journal of environmental research and public   health, 9(3), 760-771.
+
+Walther, A., Grub, J., Tsar, S., Ehlert, U., Heald, A., Perrin, R., ... & Eggenberger, L. (2023).     Status loss due to COVID-19, traditional masculinity, and their association with recent suicide     attempts and suicidal ideation. Psychology of Men & Masculinities, 24(1), 47.
+
+Yoshimasu, K., Kiyohara, C., Miyashita, K., & Stress Research Group of the Japanese Society for     
+  Hygiene. (2008). Suicidal risk factors and completed suicide: meta-analyses based on psychological   autopsy studies. Environmental health and preventive medicine, 13, 243-256.

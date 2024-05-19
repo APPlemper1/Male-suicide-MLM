@@ -1,0 +1,694 @@
+"","X","Area","Year","Sex","rates_per_100k"
+"1",1,"Wales",2021,"Persons",12.7
+"2",2,"Wales",2021,"Males",19.7
+"3",3,"Wales",2021,"Females",5.9
+"4",4,"Wales",2020,"Persons",10.3
+"5",5,"Wales",2020,"Males",16.7
+"6",6,"Wales",2020,"Females",4.3
+"7",7,"Wales",2019,"Persons",12.2
+"8",8,"Wales",2019,"Males",18.8
+"9",9,"Wales",2019,"Females",5.8
+"10",10,"Wales",2018,"Persons",12.8
+"11",11,"Wales",2018,"Males",19.1
+"12",12,"Wales",2018,"Females",6.9
+"13",13,"Wales",2017,"Persons",13.2
+"14",14,"Wales",2017,"Males",20.9
+"15",15,"Wales",2017,"Females",5.8
+"16",16,"Wales",2016,"Persons",11.8
+"17",17,"Wales",2016,"Males",20
+"18",18,"Wales",2016,"Females",4
+"19",19,"Wales",2015,"Persons",13
+"20",20,"Wales",2015,"Males",21
+"21",21,"Wales",2015,"Females",5.5
+"22",22,"Wales",2014,"Persons",9.2
+"23",23,"Wales",2014,"Males",15.3
+"24",24,"Wales",2014,"Females",3.4
+"25",25,"Wales",2013,"Persons",14.7
+"26",26,"Wales",2013,"Males",24.5
+"27",27,"Wales",2013,"Females",5.5
+"28",28,"Wales",2012,"Persons",12.5
+"29",29,"Wales",2012,"Males",20.1
+"30",30,"Wales",2012,"Females",5.6
+"31",31,"Wales",2011,"Persons",12.6
+"32",32,"Wales",2011,"Males",20.3
+"33",33,"Wales",2011,"Females",5.1
+"34",34,"Wales",2010,"Persons",10.8
+"35",35,"Wales",2010,"Males",17.6
+"36",36,"Wales",2010,"Females",4.5
+"37",37,"Wales",2009,"Persons",9.7
+"38",38,"Wales",2009,"Males",15.4
+"39",39,"Wales",2009,"Females",4.2
+"40",40,"Wales",2008,"Persons",10
+"41",41,"Wales",2008,"Males",15.1
+"42",42,"Wales",2008,"Females",5.2
+"43",43,"Wales",2007,"Persons",11.2
+"44",44,"Wales",2007,"Males",18.7
+"45",45,"Wales",2007,"Females",4.3
+"46",46,"Wales",2006,"Persons",11.5
+"47",47,"Wales",2006,"Males",17.8
+"48",48,"Wales",2006,"Females",5.7
+"49",49,"Wales",2005,"Persons",10.4
+"50",50,"Wales",2005,"Males",17.1
+"51",51,"Wales",2005,"Females",4.3
+"52",52,"Wales",2004,"Persons",12.9
+"53",53,"Wales",2004,"Males",20.9
+"54",54,"Wales",2004,"Females",5.5
+"55",55,"Wales",2003,"Persons",13
+"56",56,"Wales",2003,"Males",20.2
+"57",57,"Wales",2003,"Females",6
+"58",58,"Wales",2002,"Persons",12
+"59",59,"Wales",2002,"Males",18.5
+"60",60,"Wales",2002,"Females",5.7
+"61",61,"Wales",2001,"Persons",12.4
+"62",62,"Wales",2001,"Males",21
+"63",63,"Wales",2001,"Females",4.6
+"64",64,"North East",2021,"Persons",14.1
+"65",65,"North East",2020,"Persons",13.3
+"66",66,"North East",2019,"Persons",11.5
+"67",67,"North East",2018,"Persons",12.5
+"68",68,"North East",2017,"Persons",10.8
+"69",69,"North East",2016,"Persons",10.6
+"70",70,"North East",2015,"Persons",10.9
+"71",71,"North East",2014,"Persons",13.2
+"72",72,"North East",2013,"Persons",13
+"73",73,"North East",2012,"Persons",10.8
+"74",74,"North East",2011,"Persons",11.9
+"75",75,"North East",2010,"Persons",10.3
+"76",76,"North East",2009,"Persons",10.4
+"77",77,"North East",2008,"Persons",10.1
+"78",78,"North East",2007,"Persons",9.6
+"79",79,"North East",2006,"Persons",10
+"80",80,"North East",2005,"Persons",10.8
+"81",81,"North East",2004,"Persons",13.3
+"82",82,"North East",2003,"Persons",12.2
+"83",83,"North East",2002,"Persons",10.6
+"84",84,"North East",2001,"Persons",11.2
+"85",85,"North West",2021,"Persons",12.9
+"86",86,"North West",2020,"Persons",10.1
+"87",87,"North West",2019,"Persons",11.1
+"88",88,"North West",2018,"Persons",10.8
+"89",89,"North West",2017,"Persons",10.1
+"90",90,"North West",2016,"Persons",10.5
+"91",91,"North West",2015,"Persons",10.8
+"92",92,"North West",2014,"Persons",11.7
+"93",93,"North West",2013,"Persons",11.6
+"94",94,"North West",2012,"Persons",11.3
+"95",95,"North West",2011,"Persons",10.9
+"96",96,"North West",2010,"Persons",10.1
+"97",97,"North West",2009,"Persons",11.5
+"98",98,"North West",2008,"Persons",10.1
+"99",99,"North West",2007,"Persons",10.5
+"100",100,"North West",2006,"Persons",10.5
+"101",101,"North West",2005,"Persons",11.2
+"102",102,"North West",2004,"Persons",10.7
+"103",103,"North West",2003,"Persons",10.7
+"104",104,"North West",2002,"Persons",10.8
+"105",105,"North West",2001,"Persons",12.2
+"106",106,"Yorkshire and The Humber",2021,"Persons",12.3
+"107",107,"Yorkshire and The Humber",2020,"Persons",11.5
+"108",108,"Yorkshire and The Humber",2019,"Persons",13.8
+"109",109,"Yorkshire and The Humber",2018,"Persons",12.2
+"110",110,"Yorkshire and The Humber",2017,"Persons",9.9
+"111",111,"Yorkshire and The Humber",2016,"Persons",9.9
+"112",112,"Yorkshire and The Humber",2015,"Persons",11.6
+"113",113,"Yorkshire and The Humber",2014,"Persons",9.7
+"114",114,"Yorkshire and The Humber",2013,"Persons",10.9
+"115",115,"Yorkshire and The Humber",2012,"Persons",10.4
+"116",116,"Yorkshire and The Humber",2011,"Persons",10
+"117",117,"Yorkshire and The Humber",2010,"Persons",8.3
+"118",118,"Yorkshire and The Humber",2009,"Persons",8.8
+"119",119,"Yorkshire and The Humber",2008,"Persons",10
+"120",120,"Yorkshire and The Humber",2007,"Persons",9.3
+"121",121,"Yorkshire and The Humber",2006,"Persons",9
+"122",122,"Yorkshire and The Humber",2005,"Persons",10.8
+"123",123,"Yorkshire and The Humber",2004,"Persons",10.7
+"124",124,"Yorkshire and The Humber",2003,"Persons",9.6
+"125",125,"Yorkshire and The Humber",2002,"Persons",10.4
+"126",126,"Yorkshire and The Humber",2001,"Persons",10.2
+"127",127,"East Midlands",2021,"Persons",10.9
+"128",128,"East Midlands",2020,"Persons",9.3
+"129",129,"East Midlands",2019,"Persons",10.8
+"130",130,"East Midlands",2018,"Persons",9.6
+"131",131,"East Midlands",2017,"Persons",8.1
+"132",132,"East Midlands",2016,"Persons",8.4
+"133",133,"East Midlands",2015,"Persons",9.8
+"134",134,"East Midlands",2014,"Persons",10.5
+"135",135,"East Midlands",2013,"Persons",9.6
+"136",136,"East Midlands",2012,"Persons",9.4
+"137",137,"East Midlands",2011,"Persons",9.2
+"138",138,"East Midlands",2010,"Persons",8.1
+"139",139,"East Midlands",2009,"Persons",9.4
+"140",140,"East Midlands",2008,"Persons",8.5
+"141",141,"East Midlands",2007,"Persons",8.9
+"142",142,"East Midlands",2006,"Persons",9.2
+"143",143,"East Midlands",2005,"Persons",9.6
+"144",144,"East Midlands",2004,"Persons",10.4
+"145",145,"East Midlands",2003,"Persons",10.1
+"146",146,"East Midlands",2002,"Persons",9.8
+"147",147,"East Midlands",2001,"Persons",10.7
+"148",148,"West Midlands",2021,"Persons",11
+"149",149,"West Midlands",2020,"Persons",10.7
+"150",150,"West Midlands",2019,"Persons",10.5
+"151",151,"West Midlands",2018,"Persons",10.2
+"152",152,"West Midlands",2017,"Persons",9.9
+"153",153,"West Midlands",2016,"Persons",8.9
+"154",154,"West Midlands",2015,"Persons",9.6
+"155",155,"West Midlands",2014,"Persons",11.6
+"156",156,"West Midlands",2013,"Persons",9.8
+"157",157,"West Midlands",2012,"Persons",9.2
+"158",158,"West Midlands",2011,"Persons",8.9
+"159",159,"West Midlands",2010,"Persons",9.4
+"160",160,"West Midlands",2009,"Persons",9.3
+"161",161,"West Midlands",2008,"Persons",9.7
+"162",162,"West Midlands",2007,"Persons",7.6
+"163",163,"West Midlands",2006,"Persons",8.8
+"164",164,"West Midlands",2005,"Persons",9.2
+"165",165,"West Midlands",2004,"Persons",9.8
+"166",166,"West Midlands",2003,"Persons",10.1
+"167",167,"West Midlands",2002,"Persons",10
+"168",168,"West Midlands",2001,"Persons",11.4
+"169",169,"East",2021,"Persons",8.2
+"170",170,"East",2020,"Persons",9.5
+"171",171,"East",2019,"Persons",11.6
+"172",172,"East",2018,"Persons",11.3
+"173",173,"East",2017,"Persons",8.7
+"174",174,"East",2016,"Persons",9.8
+"175",175,"East",2015,"Persons",9.3
+"176",176,"East",2014,"Persons",9.8
+"177",177,"East",2013,"Persons",8.8
+"178",178,"East",2012,"Persons",8.4
+"179",179,"East",2011,"Persons",9.4
+"180",180,"East",2010,"Persons",8.8
+"181",181,"East",2009,"Persons",8.3
+"182",182,"East",2008,"Persons",9.8
+"183",183,"East",2007,"Persons",8.5
+"184",184,"East",2006,"Persons",8.7
+"185",185,"East",2005,"Persons",9.2
+"186",186,"East",2004,"Persons",9.4
+"187",187,"East",2003,"Persons",9.4
+"188",188,"East",2002,"Persons",9.9
+"189",189,"East",2001,"Persons",9.4
+"190",190,"London",2021,"Persons",6.6
+"191",191,"London",2020,"Persons",7
+"192",192,"London",2019,"Persons",8.1
+"193",193,"London",2018,"Persons",8.8
+"194",194,"London",2017,"Persons",7.7
+"195",195,"London",2016,"Persons",7.8
+"196",196,"London",2015,"Persons",10.4
+"197",197,"London",2014,"Persons",7.8
+"198",198,"London",2013,"Persons",7.4
+"199",199,"London",2012,"Persons",8.3
+"200",200,"London",2011,"Persons",8.4
+"201",201,"London",2010,"Persons",8.4
+"202",202,"London",2009,"Persons",8.4
+"203",203,"London",2008,"Persons",8.7
+"204",204,"London",2007,"Persons",8.4
+"205",205,"London",2006,"Persons",9.3
+"206",206,"London",2005,"Persons",9.9
+"207",207,"London",2004,"Persons",9.9
+"208",208,"London",2003,"Persons",10.3
+"209",209,"London",2002,"Persons",9.9
+"210",210,"London",2001,"Persons",10.2
+"211",211,"South East",2021,"Persons",10.5
+"212",212,"South East",2020,"Persons",10.6
+"213",213,"South East",2019,"Persons",10.8
+"214",214,"South East",2018,"Persons",9
+"215",215,"South East",2017,"Persons",9.1
+"216",216,"South East",2016,"Persons",9.6
+"217",217,"South East",2015,"Persons",9.7
+"218",218,"South East",2014,"Persons",10.2
+"219",219,"South East",2013,"Persons",10.7
+"220",220,"South East",2012,"Persons",9.3
+"221",221,"South East",2011,"Persons",9.6
+"222",222,"South East",2010,"Persons",9.1
+"223",223,"South East",2009,"Persons",9.7
+"224",224,"South East",2008,"Persons",9.1
+"225",225,"South East",2007,"Persons",8.4
+"226",226,"South East",2006,"Persons",9.3
+"227",227,"South East",2005,"Persons",9.7
+"228",228,"South East",2004,"Persons",9.8
+"229",229,"South East",2003,"Persons",9.9
+"230",230,"South East",2002,"Persons",10.4
+"231",231,"South East",2001,"Persons",10
+"232",232,"South West",2021,"Persons",12.7
+"233",233,"South West",2020,"Persons",11.2
+"234",234,"South West",2019,"Persons",12
+"235",235,"South West",2018,"Persons",11.5
+"236",236,"South West",2017,"Persons",10.5
+"237",237,"South West",2016,"Persons",11.2
+"238",238,"South West",2015,"Persons",10.2
+"239",239,"South West",2014,"Persons",11.1
+"240",240,"South West",2013,"Persons",11.7
+"241",241,"South West",2012,"Persons",11
+"242",242,"South West",2011,"Persons",11
+"243",243,"South West",2010,"Persons",10.7
+"244",244,"South West",2009,"Persons",11.2
+"245",245,"South West",2008,"Persons",9.6
+"246",246,"South West",2007,"Persons",9.1
+"247",247,"South West",2006,"Persons",10.2
+"248",248,"South West",2005,"Persons",10.1
+"249",249,"South West",2004,"Persons",11
+"250",250,"South West",2003,"Persons",10.2
+"251",251,"South West",2002,"Persons",10.3
+"252",252,"South West",2001,"Persons",10.6
+"253",253,"North East",2021,"Males",22.2
+"254",254,"North East",2020,"Males",21.1
+"255",255,"North East",2019,"Males",19.1
+"256",256,"North East",2018,"Males",20.4
+"257",257,"North East",2017,"Males",17.8
+"258",258,"North East",2016,"Males",15.9
+"259",259,"North East",2015,"Males",16.8
+"260",260,"North East",2014,"Males",21.4
+"261",261,"North East",2013,"Males",20.8
+"262",262,"North East",2012,"Males",17.7
+"263",263,"North East",2011,"Males",19.6
+"264",264,"North East",2010,"Males",15.5
+"265",265,"North East",2009,"Males",17.6
+"266",266,"North East",2008,"Males",16.3
+"267",267,"North East",2007,"Males",15.7
+"268",268,"North East",2006,"Males",16.5
+"269",269,"North East",2005,"Males",16.5
+"270",270,"North East",2004,"Males",20.3
+"271",271,"North East",2003,"Males",20.6
+"272",272,"North East",2002,"Males",17.5
+"273",273,"North East",2001,"Males",18.3
+"274",274,"North West",2021,"Males",19.7
+"275",275,"North West",2020,"Males",15.5
+"276",276,"North West",2019,"Males",17.3
+"277",277,"North West",2018,"Males",17
+"278",278,"North West",2017,"Males",15.6
+"279",279,"North West",2016,"Males",16.2
+"280",280,"North West",2015,"Males",16.4
+"281",281,"North West",2014,"Males",17.7
+"282",282,"North West",2013,"Males",18.8
+"283",283,"North West",2012,"Males",18.2
+"284",284,"North West",2011,"Males",17.4
+"285",285,"North West",2010,"Males",16.1
+"286",286,"North West",2009,"Males",18.1
+"287",287,"North West",2008,"Males",16
+"288",288,"North West",2007,"Males",16.8
+"289",289,"North West",2006,"Males",16.7
+"290",290,"North West",2005,"Males",17.9
+"291",291,"North West",2004,"Males",16.6
+"292",292,"North West",2003,"Males",16.1
+"293",293,"North West",2002,"Males",16.3
+"294",294,"North West",2001,"Males",18.9
+"295",295,"Yorkshire and The Humber",2021,"Males",17.8
+"296",296,"Yorkshire and The Humber",2020,"Males",18
+"297",297,"Yorkshire and The Humber",2019,"Males",20.6
+"298",298,"Yorkshire and The Humber",2018,"Males",19
+"299",299,"Yorkshire and The Humber",2017,"Males",15.3
+"300",300,"Yorkshire and The Humber",2016,"Males",15.8
+"301",301,"Yorkshire and The Humber",2015,"Males",17.9
+"302",302,"Yorkshire and The Humber",2014,"Males",15.6
+"303",303,"Yorkshire and The Humber",2013,"Males",17.9
+"304",304,"Yorkshire and The Humber",2012,"Males",16.9
+"305",305,"Yorkshire and The Humber",2011,"Males",15.9
+"306",306,"Yorkshire and The Humber",2010,"Males",12.6
+"307",307,"Yorkshire and The Humber",2009,"Males",14.4
+"308",308,"Yorkshire and The Humber",2008,"Males",16.1
+"309",309,"Yorkshire and The Humber",2007,"Males",15.1
+"310",310,"Yorkshire and The Humber",2006,"Males",14.5
+"311",311,"Yorkshire and The Humber",2005,"Males",16.2
+"312",312,"Yorkshire and The Humber",2004,"Males",16.9
+"313",313,"Yorkshire and The Humber",2003,"Males",14.8
+"314",314,"Yorkshire and The Humber",2002,"Males",16.3
+"315",315,"Yorkshire and The Humber",2001,"Males",16.1
+"316",316,"East Midlands",2021,"Males",17.2
+"317",317,"East Midlands",2020,"Males",15
+"318",318,"East Midlands",2019,"Males",16.7
+"319",319,"East Midlands",2018,"Males",14.8
+"320",320,"East Midlands",2017,"Males",12.4
+"321",321,"East Midlands",2016,"Males",13.6
+"322",322,"East Midlands",2015,"Males",15.3
+"323",323,"East Midlands",2014,"Males",16.3
+"324",324,"East Midlands",2013,"Males",15.7
+"325",325,"East Midlands",2012,"Males",15.6
+"326",326,"East Midlands",2011,"Males",14.5
+"327",327,"East Midlands",2010,"Males",12.4
+"328",328,"East Midlands",2009,"Males",13.9
+"329",329,"East Midlands",2008,"Males",12.9
+"330",330,"East Midlands",2007,"Males",14.5
+"331",331,"East Midlands",2006,"Males",14
+"332",332,"East Midlands",2005,"Males",15
+"333",333,"East Midlands",2004,"Males",15.9
+"334",334,"East Midlands",2003,"Males",15.9
+"335",335,"East Midlands",2002,"Males",15
+"336",336,"East Midlands",2001,"Males",16.9
+"337",337,"West Midlands",2021,"Males",16.6
+"338",338,"West Midlands",2020,"Males",16.4
+"339",339,"West Midlands",2019,"Males",16.4
+"340",340,"West Midlands",2018,"Males",15.7
+"341",341,"West Midlands",2017,"Males",15.4
+"342",342,"West Midlands",2016,"Males",13.9
+"343",343,"West Midlands",2015,"Males",15.2
+"344",344,"West Midlands",2014,"Males",18.5
+"345",345,"West Midlands",2013,"Males",16.2
+"346",346,"West Midlands",2012,"Males",14.8
+"347",347,"West Midlands",2011,"Males",13.8
+"348",348,"West Midlands",2010,"Males",14.3
+"349",349,"West Midlands",2009,"Males",14.3
+"350",350,"West Midlands",2008,"Males",15.7
+"351",351,"West Midlands",2007,"Males",11.7
+"352",352,"West Midlands",2006,"Males",13.6
+"353",353,"West Midlands",2005,"Males",13.7
+"354",354,"West Midlands",2004,"Males",15
+"355",355,"West Midlands",2003,"Males",15.7
+"356",356,"West Midlands",2002,"Males",16.3
+"357",357,"West Midlands",2001,"Males",18.3
+"358",358,"East",2021,"Males",12.5
+"359",359,"East",2020,"Males",14.5
+"360",360,"East",2019,"Males",17.5
+"361",361,"East",2018,"Males",17.6
+"362",362,"East",2017,"Males",13.2
+"363",363,"East",2016,"Males",15.2
+"364",364,"East",2015,"Males",14.5
+"365",365,"East",2014,"Males",15.2
+"366",366,"East",2013,"Males",14
+"367",367,"East",2012,"Males",13
+"368",368,"East",2011,"Males",14.5
+"369",369,"East",2010,"Males",14.3
+"370",370,"East",2009,"Males",13.1
+"371",371,"East",2008,"Males",14.9
+"372",372,"East",2007,"Males",13.3
+"373",373,"East",2006,"Males",13.2
+"374",374,"East",2005,"Males",14.4
+"375",375,"East",2004,"Males",13.7
+"376",376,"East",2003,"Males",14.2
+"377",377,"East",2002,"Males",15.8
+"378",378,"East",2001,"Males",14.1
+"379",379,"London",2021,"Males",9.9
+"380",380,"London",2020,"Males",10.8
+"381",381,"London",2019,"Males",11.8
+"382",382,"London",2018,"Males",13.8
+"383",383,"London",2017,"Males",11.6
+"384",384,"London",2016,"Males",12
+"385",385,"London",2015,"Males",15.9
+"386",386,"London",2014,"Males",12.4
+"387",387,"London",2013,"Males",11.7
+"388",388,"London",2012,"Males",12.7
+"389",389,"London",2011,"Males",12.4
+"390",390,"London",2010,"Males",13.4
+"391",391,"London",2009,"Males",12.9
+"392",392,"London",2008,"Males",13.3
+"393",393,"London",2007,"Males",12.8
+"394",394,"London",2006,"Males",14.5
+"395",395,"London",2005,"Males",14.8
+"396",396,"London",2004,"Males",15
+"397",397,"London",2003,"Males",14.7
+"398",398,"London",2002,"Males",14.7
+"399",399,"London",2001,"Males",15.4
+"400",400,"South East",2021,"Males",15.4
+"401",401,"South East",2020,"Males",15.6
+"402",402,"South East",2019,"Males",16.8
+"403",403,"South East",2018,"Males",13.5
+"404",404,"South East",2017,"Males",13.6
+"405",405,"South East",2016,"Males",14.5
+"406",406,"South East",2015,"Males",14.8
+"407",407,"South East",2014,"Males",15.9
+"408",408,"South East",2013,"Males",16.9
+"409",409,"South East",2012,"Males",14.4
+"410",410,"South East",2011,"Males",14.5
+"411",411,"South East",2010,"Males",13.8
+"412",412,"South East",2009,"Males",14.7
+"413",413,"South East",2008,"Males",14
+"414",414,"South East",2007,"Males",13
+"415",415,"South East",2006,"Males",13.8
+"416",416,"South East",2005,"Males",14.4
+"417",417,"South East",2004,"Males",14.7
+"418",418,"South East",2003,"Males",15.6
+"419",419,"South East",2002,"Males",15.4
+"420",420,"South East",2001,"Males",15.4
+"421",421,"South West",2021,"Males",18.6
+"422",422,"South West",2020,"Males",16.9
+"423",423,"South West",2019,"Males",19.4
+"424",424,"South West",2018,"Males",17.7
+"425",425,"South West",2017,"Males",15.7
+"426",426,"South West",2016,"Males",17.1
+"427",427,"South West",2015,"Males",14.7
+"428",428,"South West",2014,"Males",16
+"429",429,"South West",2013,"Males",17.9
+"430",430,"South West",2012,"Males",17.2
+"431",431,"South West",2011,"Males",17.2
+"432",432,"South West",2010,"Males",16.6
+"433",433,"South West",2009,"Males",17.4
+"434",434,"South West",2008,"Males",14.9
+"435",435,"South West",2007,"Males",13.8
+"436",436,"South West",2006,"Males",16
+"437",437,"South West",2005,"Males",15.6
+"438",438,"South West",2004,"Males",16.5
+"439",439,"South West",2003,"Males",16.2
+"440",440,"South West",2002,"Males",15
+"441",441,"South West",2001,"Males",17.2
+"442",442,"North East",2021,"Females",6.4
+"443",443,"North East",2020,"Females",5.8
+"444",444,"North East",2019,"Females",4.1
+"445",445,"North East",2018,"Females",5.2
+"446",446,"North East",2017,"Females",4.1
+"447",447,"North East",2016,"Females",5.5
+"448",448,"North East",2015,"Females",5.3
+"449",449,"North East",2014,"Females",5.4
+"450",450,"North East",2013,"Females",5.5
+"451",451,"North East",2012,"Females",4
+"452",452,"North East",2011,"Females",4.6
+"453",453,"North East",2010,"Females",5.4
+"454",454,"North East",2009,"Females",3.7
+"455",455,"North East",2008,"Females",4.4
+"456",456,"North East",2007,"Females",4
+"457",457,"North East",2006,"Females",4.4
+"458",458,"North East",2005,"Females",5.8
+"459",459,"North East",2004,"Females",7.2
+"460",460,"North East",2003,"Females",5
+"461",461,"North East",2002,"Females",4.4
+"462",462,"North East",2001,"Females",4.8
+"463",463,"North West",2021,"Females",6.3
+"464",464,"North West",2020,"Females",4.9
+"465",465,"North West",2019,"Females",5.2
+"466",466,"North West",2018,"Females",4.8
+"467",467,"North West",2017,"Females",4.8
+"468",468,"North West",2016,"Females",5
+"469",469,"North West",2015,"Females",5.5
+"470",470,"North West",2014,"Females",5.8
+"471",471,"North West",2013,"Females",4.7
+"472",472,"North West",2012,"Females",4.8
+"473",473,"North West",2011,"Females",4.6
+"474",474,"North West",2010,"Females",4.4
+"475",475,"North West",2009,"Females",5.4
+"476",476,"North West",2008,"Females",4.4
+"477",477,"North West",2007,"Females",4.5
+"478",478,"North West",2006,"Females",4.7
+"479",479,"North West",2005,"Females",5.1
+"480",480,"North West",2004,"Females",5.2
+"481",481,"North West",2003,"Females",5.7
+"482",482,"North West",2002,"Females",5.7
+"483",483,"North West",2001,"Females",6.1
+"484",484,"Yorkshire and The Humber",2021,"Females",7
+"485",485,"Yorkshire and The Humber",2020,"Females",5.3
+"486",486,"Yorkshire and The Humber",2019,"Females",7.3
+"487",487,"Yorkshire and The Humber",2018,"Females",5.7
+"488",488,"Yorkshire and The Humber",2017,"Females",4.6
+"489",489,"Yorkshire and The Humber",2016,"Females",4.2
+"490",490,"Yorkshire and The Humber",2015,"Females",5.6
+"491",491,"Yorkshire and The Humber",2014,"Females",4.1
+"492",492,"Yorkshire and The Humber",2013,"Females",4.1
+"493",493,"Yorkshire and The Humber",2012,"Females",4.2
+"494",494,"Yorkshire and The Humber",2011,"Females",4.4
+"495",495,"Yorkshire and The Humber",2010,"Females",4
+"496",496,"Yorkshire and The Humber",2009,"Females",3.5
+"497",497,"Yorkshire and The Humber",2008,"Females",4.3
+"498",498,"Yorkshire and The Humber",2007,"Females",3.9
+"499",499,"Yorkshire and The Humber",2006,"Females",4
+"500",500,"Yorkshire and The Humber",2005,"Females",5.6
+"501",501,"Yorkshire and The Humber",2004,"Females",5.4
+"502",502,"Yorkshire and The Humber",2003,"Females",4.7
+"503",503,"Yorkshire and The Humber",2002,"Females",4.8
+"504",504,"Yorkshire and The Humber",2001,"Females",4.9
+"505",505,"East Midlands",2021,"Females",4.8
+"506",506,"East Midlands",2020,"Females",3.9
+"507",507,"East Midlands",2019,"Females",5.2
+"508",508,"East Midlands",2018,"Females",4.7
+"509",509,"East Midlands",2017,"Females",4.1
+"510",510,"East Midlands",2016,"Females",3.6
+"511",511,"East Midlands",2015,"Females",4.5
+"512",512,"East Midlands",2014,"Females",4.9
+"513",513,"East Midlands",2013,"Females",3.8
+"514",514,"East Midlands",2012,"Females",3.5
+"515",515,"East Midlands",2011,"Females",4.1
+"516",516,"East Midlands",2010,"Females",4.1
+"517",517,"East Midlands",2009,"Females",5.1
+"518",518,"East Midlands",2008,"Females",4.3
+"519",519,"East Midlands",2007,"Females",3.8
+"520",520,"East Midlands",2006,"Females",4.8
+"521",521,"East Midlands",2005,"Females",4.4
+"522",522,"East Midlands",2004,"Females",5.4
+"523",523,"East Midlands",2003,"Females",4.8
+"524",524,"East Midlands",2002,"Females",4.8
+"525",525,"East Midlands",2001,"Females",4.9
+"526",526,"West Midlands",2021,"Females",5.6
+"527",527,"West Midlands",2020,"Females",5.2
+"528",528,"West Midlands",2019,"Females",4.8
+"529",529,"West Midlands",2018,"Females",4.9
+"530",530,"West Midlands",2017,"Females",4.6
+"531",531,"West Midlands",2016,"Females",4.1
+"532",532,"West Midlands",2015,"Females",4.1
+"533",533,"West Midlands",2014,"Females",5
+"534",534,"West Midlands",2013,"Females",3.6
+"535",535,"West Midlands",2012,"Females",3.8
+"536",536,"West Midlands",2011,"Females",4.4
+"537",537,"West Midlands",2010,"Females",4.7
+"538",538,"West Midlands",2009,"Females",4.4
+"539",539,"West Midlands",2008,"Females",4.2
+"540",540,"West Midlands",2007,"Females",3.7
+"541",541,"West Midlands",2006,"Females",4.3
+"542",542,"West Midlands",2005,"Females",5
+"543",543,"West Midlands",2004,"Females",5.1
+"544",544,"West Midlands",2003,"Females",4.7
+"545",545,"West Midlands",2002,"Females",4.1
+"546",546,"West Midlands",2001,"Females",5.1
+"547",547,"East",2021,"Females",4.1
+"548",548,"East",2020,"Females",4.9
+"549",549,"East",2019,"Females",5.9
+"550",550,"East",2018,"Females",5.4
+"551",551,"East",2017,"Females",4.5
+"552",552,"East",2016,"Females",4.8
+"553",553,"East",2015,"Females",4.4
+"554",554,"East",2014,"Females",4.8
+"555",555,"East",2013,"Females",3.9
+"556",556,"East",2012,"Females",4.1
+"557",557,"East",2011,"Females",4.5
+"558",558,"East",2010,"Females",3.6
+"559",559,"East",2009,"Females",3.9
+"560",560,"East",2008,"Females",4.9
+"561",561,"East",2007,"Females",4
+"562",562,"East",2006,"Females",4.5
+"563",563,"East",2005,"Females",4.6
+"564",564,"East",2004,"Females",5.3
+"565",565,"East",2003,"Females",4.8
+"566",566,"East",2002,"Females",4.5
+"567",567,"East",2001,"Females",5
+"568",568,"London",2021,"Females",3.4
+"569",569,"London",2020,"Females",3.4
+"570",570,"London",2019,"Females",4.6
+"571",571,"London",2018,"Females",4.1
+"572",572,"London",2017,"Females",4
+"573",573,"London",2016,"Females",3.7
+"574",574,"London",2015,"Females",5.4
+"575",575,"London",2014,"Females",3.5
+"576",576,"London",2013,"Females",3.5
+"577",577,"London",2012,"Females",4.1
+"578",578,"London",2011,"Females",4.7
+"579",579,"London",2010,"Females",3.9
+"580",580,"London",2009,"Females",4.2
+"581",581,"London",2008,"Females",4.2
+"582",582,"London",2007,"Females",4.2
+"583",583,"London",2006,"Females",4.6
+"584",584,"London",2005,"Females",5.3
+"585",585,"London",2004,"Females",5.2
+"586",586,"London",2003,"Females",6.1
+"587",587,"London",2002,"Females",5.4
+"588",588,"London",2001,"Females",5.5
+"589",589,"South East",2021,"Females",5.8
+"590",590,"South East",2020,"Females",5.9
+"591",591,"South East",2019,"Females",4.9
+"592",592,"South East",2018,"Females",4.7
+"593",593,"South East",2017,"Females",4.8
+"594",594,"South East",2016,"Females",4.9
+"595",595,"South East",2015,"Females",4.8
+"596",596,"South East",2014,"Females",4.7
+"597",597,"South East",2013,"Females",4.9
+"598",598,"South East",2012,"Females",4.5
+"599",599,"South East",2011,"Females",5.1
+"600",600,"South East",2010,"Females",4.7
+"601",601,"South East",2009,"Females",5
+"602",602,"South East",2008,"Females",4.4
+"603",603,"South East",2007,"Females",4.2
+"604",604,"South East",2006,"Females",5.1
+"605",605,"South East",2005,"Females",5.5
+"606",606,"South East",2004,"Females",5.1
+"607",607,"South East",2003,"Females",4.6
+"608",608,"South East",2002,"Females",5.8
+"609",609,"South East",2001,"Females",5
+"610",610,"South West",2021,"Females",7.1
+"611",611,"South West",2020,"Females",5.8
+"612",612,"South West",2019,"Females",4.9
+"613",613,"South West",2018,"Females",5.7
+"614",614,"South West",2017,"Females",5.6
+"615",615,"South West",2016,"Females",5.6
+"616",616,"South West",2015,"Females",5.7
+"617",617,"South West",2014,"Females",6.5
+"618",618,"South West",2013,"Females",5.9
+"619",619,"South West",2012,"Females",5.3
+"620",620,"South West",2011,"Females",5.2
+"621",621,"South West",2010,"Females",5.4
+"622",622,"South West",2009,"Females",5.3
+"623",623,"South West",2008,"Females",4.8
+"624",624,"South West",2007,"Females",4.7
+"625",625,"South West",2006,"Females",4.7
+"626",626,"South West",2005,"Females",5
+"627",627,"South West",2004,"Females",6
+"628",628,"South West",2003,"Females",5
+"629",629,"South West",2002,"Females",5.9
+"630",630,"South West",2001,"Females",4.5
+"631",631,"Mean for all regions",2001,"Females",5.04
+"632",632,"Mean for all regions",2001,"Males",17.16
+"633",633,"Mean for all regions",2001,"Persons",10.83
+"634",634,"Mean for all regions",2002,"Females",5.11
+"635",635,"Mean for all regions",2002,"Males",16.08
+"636",636,"Mean for all regions",2002,"Persons",10.41
+"637",637,"Mean for all regions",2003,"Females",5.14
+"638",638,"Mean for all regions",2003,"Males",16.4
+"639",639,"Mean for all regions",2003,"Persons",10.55
+"640",640,"Mean for all regions",2004,"Females",5.54
+"641",641,"Mean for all regions",2004,"Males",16.55
+"642",642,"Mean for all regions",2004,"Persons",10.79
+"643",643,"Mean for all regions",2005,"Females",5.06
+"644",644,"Mean for all regions",2005,"Males",15.56
+"645",645,"Mean for all regions",2005,"Persons",10.09
+"646",646,"Mean for all regions",2006,"Females",4.68
+"647",647,"Mean for all regions",2006,"Males",15.06
+"648",648,"Mean for all regions",2006,"Persons",9.65
+"649",649,"Mean for all regions",2007,"Females",4.13
+"650",650,"Mean for all regions",2007,"Males",14.54
+"651",651,"Mean for all regions",2007,"Persons",9.15
+"652",652,"Mean for all regions",2008,"Females",4.51
+"653",653,"Mean for all regions",2008,"Males",14.92
+"654",654,"Mean for all regions",2008,"Persons",9.56
+"655",655,"Mean for all regions",2009,"Females",4.47
+"656",656,"Mean for all regions",2009,"Males",15.18
+"657",657,"Mean for all regions",2009,"Persons",9.67
+"658",658,"Mean for all regions",2010,"Females",4.47
+"659",659,"Mean for all regions",2010,"Males",14.66
+"660",660,"Mean for all regions",2010,"Persons",9.4
+"661",661,"Mean for all regions",2011,"Females",4.67
+"662",662,"Mean for all regions",2011,"Males",16.01
+"663",663,"Mean for all regions",2011,"Persons",10.19
+"664",664,"Mean for all regions",2012,"Females",4.39
+"665",665,"Mean for all regions",2012,"Males",16.06
+"666",666,"Mean for all regions",2012,"Persons",10.06
+"667",667,"Mean for all regions",2013,"Females",4.54
+"668",668,"Mean for all regions",2013,"Males",17.44
+"669",669,"Mean for all regions",2013,"Persons",10.82
+"670",670,"Mean for all regions",2014,"Females",4.81
+"671",671,"Mean for all regions",2014,"Males",16.43
+"672",672,"Mean for all regions",2014,"Persons",10.48
+"673",673,"Mean for all regions",2015,"Females",5.08
+"674",674,"Mean for all regions",2015,"Males",16.25
+"675",675,"Mean for all regions",2015,"Persons",10.53
+"676",676,"Mean for all regions",2016,"Females",4.54
+"677",677,"Mean for all regions",2016,"Males",15.42
+"678",678,"Mean for all regions",2016,"Persons",9.85
+"679",679,"Mean for all regions",2017,"Females",4.69
+"680",680,"Mean for all regions",2017,"Males",15.15
+"681",681,"Mean for all regions",2017,"Persons",9.8
+"682",682,"Mean for all regions",2018,"Females",5.21
+"683",683,"Mean for all regions",2018,"Males",16.86
+"684",684,"Mean for all regions",2018,"Persons",10.87
+"685",685,"Mean for all regions",2019,"Females",5.27
+"686",686,"Mean for all regions",2019,"Males",17.44
+"687",687,"Mean for all regions",2019,"Persons",11.24
+"688",688,"Mean for all regions",2020,"Females",4.94
+"689",689,"Mean for all regions",2020,"Males",16.05
+"690",690,"Mean for all regions",2020,"Persons",10.35
+"691",691,"Mean for all regions",2021,"Females",5.64
+"692",692,"Mean for all regions",2021,"Males",16.96
+"693",693,"Mean for all regions",2021,"Persons",11.19
